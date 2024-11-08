@@ -159,13 +159,33 @@ header nav ul li a:hover {
 #banner p {
     font-size: 1.2rem;
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 #productos {
     padding: 50px 0;
     text-align: center;
-    background-color: #92caeb;
+   background-image: url(https://png.pngtree.com/back_origin_pic/03/79/44/c54bf1abecf279c93e2ceb4b90680fd2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
-
+#productos h2{
+    background-color: #93d3ec;
+}
 .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste flexible de columnas */
@@ -258,13 +278,15 @@ header nav ul li a:hover {
 #contacto {
     padding: 2rem;
     text-align: center;
-    background-color: aqua;
+   background-image: url(https://tse3.mm.bing.net/th?id=OIP.YE3QnfngKXC4_7pSoxchmwAAAA&pid=Api&P=0&h=180);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 form {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #adacf3;
+    background-color: #79d4f0;
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -298,6 +320,57 @@ form button {
 
 form button:hover {
     background-color: #555;
+}
+/* Estilos generales */
+.mapa {
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.AonjUr3hT1Xm2k6glDaqHgHaE8&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mapa .titulo-principal {
+    font-size: 24px;
+    color: #d40a0a;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mapa p {
+    font-size: 16px;
+    color: #f51326;
+    margin-bottom: 20px;
+}
+
+.mapa-contenido {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para el iframe */
+.mapa-contenido iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 8px; /* esquinas redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .mapa .titulo-principal {
+        font-size: 20px;
+    }
+
+    .mapa p {
+        font-size: 14px;
+    }
+
+    .mapa-contenido iframe {
+        height: 300px;
+    }
 }
 
 /* Footer */
